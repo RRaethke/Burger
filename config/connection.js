@@ -3,9 +3,9 @@ var mysql = require("mysql");
 
 var connection;
 if (process.env.JAWS_URL) {
-	connection = mysql.createconnection(process.env.JAWS_URL);
+	connection = mysql.createConnection(process.env.JAWS_URL);
 } else {
-	connection = mysql.createconnection({
+	connection = mysql.createConnection({
 		host: 'localhost',
 		user: 'root',
 		PORT: 3306,
