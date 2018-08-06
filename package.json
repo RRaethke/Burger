@@ -1,14 +1,21 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "burger express node application",
+  "description": "Restaurant App",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RRaethke/burger.git"
   },
   "author": "Reece Raethke",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RRaethke/burger/issues"
+  },
+  "homepage": "https://github.com/RRaethke/burger#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
