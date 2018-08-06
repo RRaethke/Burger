@@ -1,11 +1,11 @@
-// Set up MySQL connection.
+// Set up MySQL Connection.
 var mysql = require("mysql");
 
-var connection;
+var Connection;
 if (process.env.JAWS_URL) {
-	connection = mysql.createConnection(process.env.JAWS_URL);
+	Connection = mysql.createConnection(process.env.JAWS_URL);
 } else {
-	connection = mysql.createConnection({
+	Connection = mysql.createConnection({
 		host: 'localhost',
 		user: 'root',
 		PORT: 3306,
@@ -14,14 +14,14 @@ if (process.env.JAWS_URL) {
 	});
 }
 
-// Make connection.
-connection.connect(function(err) {
+// Make Connection.
+Connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);
     return;
   }
-  console.log("connected as id: " + connection.threadId);
+  console.log("connected as id: " + Connection.threadId);
 });
 
-// Export connection for our ORM to use.
-module.exports = connection;
+// Export Connection for our ORM to use.
+module.exports = Connection;
