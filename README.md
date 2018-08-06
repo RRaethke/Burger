@@ -1,4 +1,4 @@
-# HW 14 {Burger}
+# HW 14 {burger}
 ## Node Express Handlebars application
 
   - Restaurant app that lets users input the names of burgers they'd like to eat.
